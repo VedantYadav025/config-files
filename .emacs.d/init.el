@@ -3,8 +3,10 @@
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode 1)
 
-;; package.el setup
+;; Normal Configration
+(electric-pair-mode 1) ;; good bracket behaviour
 
+;; package.el setup
 (require 'package)
 
 ;; Prevent Emacs from auto-initializing packages before init.el
@@ -30,8 +32,6 @@
 ;; Always install packages declared with use-package
 (setq use-package-always-ensure t)
 
-
-
 (use-package which-key
   :ensure t
   :config
@@ -50,6 +50,9 @@
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C-c C-SPC") 'mc/mark-all-dwim)
 
+
+;; Color theme
+(load-theme 'modus-vivendi)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
