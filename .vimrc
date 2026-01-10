@@ -11,8 +11,6 @@ set nohlsearch
 highlight Comment ctermfg=green
 colorscheme habamax
 
-autocmd Filetype haskell autocmd BufWritePre <buffer> call CocAction('format')
-
 let g:haskell_indent_disable=1
 
 call plug#begin()
