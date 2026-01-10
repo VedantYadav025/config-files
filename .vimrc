@@ -20,6 +20,5 @@ call plug#begin()
 " List your plugins here
 Plug 'tpope/vim-sensible'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neovimhaskell/haskell-vim'
 
 call plug#end()
